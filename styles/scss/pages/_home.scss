@@ -1,0 +1,86 @@
+.features {
+    background-image: url('../../../images/patterns/pattern-curve-top-right.svg'), url('../../../images/patterns/pattern-curve-top-left.svg');
+    background-repeat: no-repeat;
+    background-position: top 322px left, bottom 10px right;
+    margin-top: -180px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 116px;
+    }
+
+    &__imgBox {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+
+        img {
+            box-shadow: $blured-shadow;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__textBox {
+        padding-left: 100px;
+
+        h2 {
+            margin: 171px 0 16px 0;
+            width: 85%;
+
+            @media only screen and (max-width: 1280px) {
+                width: 50%;
+                margin: 27px auto 14px auto;
+            }
+    
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+                margin-top: 22px;
+                margin-bottom: 14px;
+            }
+
+            &::before {
+                content: url('../../../images/patterns/pattern-divide.svg');
+                display: block;
+                width: 100%;
+                height: 87px;
+
+                @media only screen and (max-width: 768px) {
+                    height: 65px;
+                }
+            }
+        }
+    }
+
+    &__inner:last-child {
+        flex-direction: row-reverse;
+
+        .features__imgBox {
+            position: relative;
+
+            &::after {
+                content: url('../../../images/patterns/pattern-lines.svg');
+                display: block;
+                position: absolute;
+                right: 40px;
+                bottom: 63px;
+                width: 160px;
+                height: 76px;
+
+                @media only screen and (min-width: 55em) {
+                    right: -25px;
+                }
+                @media only screen and (min-width: 80em) {
+                    right: -116px;
+                    top: 282px;
+                }
+            }
+        }
+
+        .features__textBox {
+            padding-left: 0;
+            padding-right: 100px;
+        }
+    }
+}
