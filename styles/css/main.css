@@ -1,0 +1,195 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 18px;
+  color: #242b37;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+}
+
+@media only screen and (max-width: 1280px) {
+  h1 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+
+@media only screen and (max-width: 1280px) {
+  h2 {
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+p {
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    line-height: 25px;
+  }
+}
+
+.btn {
+  padding: 25px 54px;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn span {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 10;
+}
+
+.btn--transparent {
+  border: 1px solid #FFFFFF;
+}
+
+.btn--transparent:hover span {
+  color: #111111;
+}
+
+.btn--transparent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10%;
+  height: 100%;
+  width: 0;
+  background-color: #FFFFFF;
+  transform: skewX(25deg);
+  transition: width .5s;
+}
+
+.btn--transparent:hover::before {
+  width: 120%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.header {
+  background-image: url("./../../../images/homepage/hero-bg-desktop.jpg");
+  background-color: #111111;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.header__logo img {
+  width: 103px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__logo img {
+    width: 82px;
+  }
+}
+
+.header__textBox {
+  color: #FFFFFF;
+  margin-top: 150px;
+  max-width: 550px;
+}
+
+.header__textBox--heading {
+  letter-spacing: -1px;
+  margin-bottom: 23px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__textBox--heading {
+    letter-spacing: 0;
+  }
+}
+
+.header__textBox--subheading {
+  margin-bottom: 40px;
+  max-width: 75%;
+}
+
+@media only screen and (max-width: 1280px) {
+  .header__textBox--subheading {
+    margin-bottom: 21px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__textBox--subheading {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,41 @@
+.btn {
+    padding: 25px 54px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+
+    span {
+        color: $color-white;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.btn--transparent {
+    border: 1px solid $color-white;
+
+    &:hover span {
+        color: $color-gray-dark;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -10%;
+        height: 100%;
+        width: 0;
+        background-color: $color-white;
+        transform: skewX(25deg);
+        transition: width .5s;
+    }
+    
+    &:hover::before {
+        width: 120%;
+    }
+}

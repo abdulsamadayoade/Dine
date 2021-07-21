@@ -1,0 +1,46 @@
+.header {
+    background-image: url('./../../../images/homepage/hero-bg-desktop.jpg');
+    background-color: $color-gray-dark;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 50px 0;
+
+    &__logo {
+        img {
+            width: 103px;
+
+            @media only screen and (max-width: 768px) {
+                width: 82px;
+            }
+        }
+    }
+
+    &__textBox {
+        color: $color-white;
+        margin-top: 150px;
+        max-width: 550px;
+
+        &--heading {
+            letter-spacing: -1px;
+            margin-bottom: 23px;
+
+            @media only screen and (max-width: 768px) {
+                letter-spacing: 0;
+            }
+        }
+
+        &--subheading {
+            margin-bottom: 40px;
+            max-width: 75%;
+    
+            @media only screen and (max-width: 1280px) {
+                margin-bottom: 21px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
