@@ -14,10 +14,6 @@
         position: relative;
         z-index: 10;
     }
-}
-
-.btn--transparent {
-    border: 1px solid $color-white;
 
     &:hover span {
         color: $color-gray-dark;
@@ -38,4 +34,13 @@
     &:hover::before {
         width: 120%;
     }
+}
+
+.btn--transparent {
+    border: 1px solid $color-white;
+}
+
+.btn--black {
+    background: $color-gray-dark;
+    border: 1px solid $color-gray-dark;
 }

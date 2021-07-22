@@ -1,0 +1,92 @@
+.events {
+    background-image: url('../../../images/patterns/pattern-curve-top-right.svg');
+    background-repeat: no-repeat;
+    background-position: top left -400px;
+    padding: 150px 0 80px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        > * {
+            width: 50%;
+        }
+    }
+
+    &__imgBox {
+        position: relative;
+
+        &::before {
+            content: url('../../../images/patterns/pattern-lines.svg');
+            position: absolute;
+            height: 76px;
+            width: 160px;
+            top: -38px;
+            left: -50px;
+        }
+
+        img {
+            width: 90%;
+            box-shadow: $blured-shadow;
+            display: none;
+        }
+
+        .showImage {
+            display: block;
+        }
+    }
+
+    &__textBox {
+        padding: 60px 50px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__nav {
+        margin-top: 35px;
+    }
+
+    &__item {
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: rgba($color-brown-gray, 0.5);
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: -125px;
+            height: 1px;
+            width: 90px;
+            margin: 5px auto 0;
+            background-color: transparent;
+            z-index: -1;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: rgba($color-brown-gray, 1);
+        }
+    }
+
+    &__item.active {
+        color: rgba($color-brown-gray, 1);
+
+        &::after {
+            background-color: $color-brown;
+        }
+    }
+}

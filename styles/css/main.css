@@ -115,15 +115,11 @@ p {
   z-index: 10;
 }
 
-.btn--transparent {
-  border: 1px solid #FFFFFF;
-}
-
-.btn--transparent:hover span {
+.btn:hover span {
   color: #111111;
 }
 
-.btn--transparent::before {
+.btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -135,8 +131,17 @@ p {
   transition: width .5s;
 }
 
-.btn--transparent:hover::before {
+.btn:hover::before {
   width: 120%;
+}
+
+.btn--transparent {
+  border: 1px solid #FFFFFF;
+}
+
+.btn--black {
+  background: #111111;
+  border: 1px solid #111111;
 }
 
 .container {
@@ -368,4 +373,97 @@ p {
 
 .highlights__dish:not(:last-child) {
   border-bottom: 1px solid #242b37;
+}
+
+.events {
+  background-image: url("../../../images/patterns/pattern-curve-top-right.svg");
+  background-repeat: no-repeat;
+  background-position: top left -400px;
+  padding: 150px 0 80px;
+}
+
+.events__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.events__inner > * {
+  width: 50%;
+}
+
+.events__imgBox {
+  position: relative;
+}
+
+.events__imgBox::before {
+  content: url("../../../images/patterns/pattern-lines.svg");
+  position: absolute;
+  height: 76px;
+  width: 160px;
+  top: -38px;
+  left: -50px;
+}
+
+.events__imgBox img {
+  width: 90%;
+  box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.events__imgBox .showImage {
+  display: block;
+}
+
+.events__textBox {
+  padding: 60px 50px;
+}
+
+.events__textBox h2 {
+  margin-bottom: 20px;
+}
+
+.events__textBox p {
+  margin-bottom: 25px;
+}
+
+.events__nav {
+  margin-top: 35px;
+}
+
+.events__item {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(76, 76, 76, 0.5);
+  position: relative;
+}
+
+.events__item::after {
+  content: '';
+  position: absolute;
+  left: -125px;
+  height: 1px;
+  width: 90px;
+  margin: 5px auto 0;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.events__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.events__item:hover {
+  cursor: pointer;
+  color: #4c4c4c;
+}
+
+.events__item.active {
+  color: #4c4c4c;
+}
+
+.events__item.active::after {
+  background-color: #9e7f66;
 }
