@@ -78,7 +78,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 28px;
 }
@@ -91,6 +91,10 @@ p {
   p {
     line-height: 25px;
   }
+}
+
+.white {
+  color: #FFFFFF;
 }
 
 .btn {
@@ -224,7 +228,7 @@ p {
 }
 
 .features__textBox h2 {
-  margin: 171px 0 16px 0;
+  margin: 220px 0 16px 0;
   width: 85%;
 }
 
@@ -290,4 +294,78 @@ p {
 .features__inner:last-child .features__textBox {
   padding-left: 0;
   padding-right: 100px;
+}
+
+.features__inner:last-child .features__textBox h2 {
+  margin: 150px 0 16px 0;
+}
+
+.highlights {
+  background: #111111;
+  margin-top: -70px;
+  padding-top: 170px;
+  padding-bottom: 70px;
+}
+
+.highlights__inner {
+  display: flex;
+}
+
+.highlights__textBox {
+  padding-right: 100px;
+  width: 50%;
+}
+
+.highlights__textBox h2 {
+  margin-bottom: 20px;
+  max-width: 400px;
+  position: relative;
+}
+
+.highlights__textBox h2::before {
+  content: url("../../../images/patterns/pattern-divide.svg");
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  top: -87px;
+}
+
+.highlights__dishes {
+  width: 50%;
+}
+
+.highlights__dish {
+  display: flex;
+  padding: 20px 0;
+}
+
+.highlights__dish--textBox {
+  padding-left: 70px;
+}
+
+.highlights__dish--textBox h3 {
+  margin-bottom: 10px;
+}
+
+.highlights__dish--textBox p {
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.highlights__dish--imgBox {
+  position: relative;
+}
+
+.highlights__dish--imgBox::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 26%;
+  background-color: #9e7f66;
+  top: 17px;
+  left: 128px;
+}
+
+.highlights__dish:not(:last-child) {
+  border-bottom: 1px solid #242b37;
 }

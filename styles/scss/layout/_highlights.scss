@@ -1,0 +1,69 @@
+.highlights {
+    background: $color-gray-dark;
+    margin-top: -70px;
+    padding-top: 170px;
+    padding-bottom: 70px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__textBox {
+        padding-right: 100px;
+        width: 50%;
+
+        h2 {
+            margin-bottom: 20px;
+            max-width: 400px;
+            position: relative;
+    
+            &::before {
+                content: url('../../../images/patterns/pattern-divide.svg');
+                width: 100%;
+                height: 65px;
+                position: absolute;
+                top: -87px;
+            }
+        }
+    }
+
+    &__dishes {
+        width: 50%;
+    }
+
+    &__dish {
+        display: flex;
+        padding: 20px 0;
+
+        &--textBox {
+            padding-left: 70px;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 1.75;
+            }
+        }
+
+        &--imgBox {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 26%;
+                background-color: $color-brown;
+                top: 17px;
+                left: 128px;
+            }
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-gray
+        }
+    }
+}
