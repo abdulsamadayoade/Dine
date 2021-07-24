@@ -1,0 +1,10 @@
+.reservation {
+    background-image: url('../../../images/homepage/ready-bg-desktop.jpg');
+    padding: 90px 0 70px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

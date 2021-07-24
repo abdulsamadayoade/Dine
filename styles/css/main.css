@@ -369,3 +369,14 @@ p {
 .events__item.active::after {
   background-color: #9e7f66;
 }
+
+.reservation {
+  background-image: url("../../../images/homepage/ready-bg-desktop.jpg");
+  padding: 90px 0 70px;
+}
+
+.reservation__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
