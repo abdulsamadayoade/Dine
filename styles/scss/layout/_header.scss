@@ -9,10 +9,6 @@
     &__logo {
         img {
             width: 103px;
-
-            @media only screen and (max-width: 768px) {
-                width: 82px;
-            }
         }
     }
 
@@ -24,23 +20,11 @@
         &--heading {
             letter-spacing: -1px;
             margin-bottom: 23px;
-
-            @media only screen and (max-width: 768px) {
-                letter-spacing: 0;
-            }
         }
 
         &--subheading {
             margin-bottom: 40px;
             max-width: 75%;
-    
-            @media only screen and (max-width: 1280px) {
-                margin-bottom: 21px;
-            }
-
-            @media only screen and (max-width: 768px) {
-                margin-bottom: 30px;
-            }
         }
     }
 }

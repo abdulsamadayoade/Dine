@@ -30,12 +30,6 @@ body {
   color: #242b37;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-}
-
 h1 {
   font-weight: 300;
   font-size: 64px;
@@ -43,38 +37,10 @@ h1 {
   letter-spacing: -0.5px;
 }
 
-@media only screen and (max-width: 1280px) {
-  h1 {
-    font-size: 48px;
-    line-height: 64px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
-
 h2 {
   font-size: 40px;
   line-height: 56px;
   letter-spacing: -0.5px;
-}
-
-@media only screen and (max-width: 1280px) {
-  h2 {
-    letter-spacing: 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  h2 {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
-  }
 }
 
 h3 {
@@ -85,12 +51,6 @@ h3 {
 
 p {
   line-height: 30px;
-}
-
-@media only screen and (max-width: 768px) {
-  p {
-    line-height: 25px;
-  }
 }
 
 .white {
@@ -163,12 +123,6 @@ p {
   width: 103px;
 }
 
-@media only screen and (max-width: 768px) {
-  .header__logo img {
-    width: 82px;
-  }
-}
-
 .header__textBox {
   color: #FFFFFF;
   margin-top: 150px;
@@ -180,27 +134,9 @@ p {
   margin-bottom: 23px;
 }
 
-@media only screen and (max-width: 768px) {
-  .header__textBox--heading {
-    letter-spacing: 0;
-  }
-}
-
 .header__textBox--subheading {
   margin-bottom: 40px;
   max-width: 75%;
-}
-
-@media only screen and (max-width: 1280px) {
-  .header__textBox--subheading {
-    margin-bottom: 21px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .header__textBox--subheading {
-    margin-bottom: 30px;
-  }
 }
 
 .features {
@@ -237,32 +173,11 @@ p {
   width: 85%;
 }
 
-@media only screen and (max-width: 1280px) {
-  .features__textBox h2 {
-    width: 50%;
-    margin: 27px auto 14px auto;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .features__textBox h2 {
-    width: 100%;
-    margin-top: 22px;
-    margin-bottom: 14px;
-  }
-}
-
 .features__textBox h2::before {
   content: url("../../../images/patterns/pattern-divide.svg");
   display: block;
   width: 100%;
   height: 87px;
-}
-
-@media only screen and (max-width: 768px) {
-  .features__textBox h2::before {
-    height: 65px;
-  }
 }
 
 .features__inner:last-child {
@@ -281,19 +196,6 @@ p {
   bottom: 63px;
   width: 160px;
   height: 76px;
-}
-
-@media only screen and (min-width: 55em) {
-  .features__inner:last-child .features__imgBox::after {
-    right: -25px;
-  }
-}
-
-@media only screen and (min-width: 80em) {
-  .features__inner:last-child .features__imgBox::after {
-    right: -116px;
-    top: 282px;
-  }
 }
 
 .features__inner:last-child .features__textBox {
