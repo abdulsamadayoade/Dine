@@ -1,8 +1,8 @@
 .events {
     background-image: url('../../../images/patterns/pattern-curve-top-right.svg');
     background-repeat: no-repeat;
-    background-position: top left -400px;
-    padding: 150px 0 80px;
+    background-position: top left -40rem;
+    padding: 15rem 0 8rem;
 
     &__inner {
         display: flex;
@@ -19,10 +19,10 @@
         &::before {
             content: url('../../../images/patterns/pattern-lines.svg');
             position: absolute;
-            height: 76px;
-            width: 160px;
-            top: -38px;
-            left: -50px;
+            height: 7.6rem;
+            width: 16rem;
+            top: -3.8rem;
+            left: -5rem;
         }
 
         img {
@@ -37,23 +37,23 @@
     }
 
     &__textBox {
-        padding: 60px 50px;
+        padding: 6rem 5rem;
 
         h2 {
-            margin-bottom: 20px;
+            margin-bottom: 2rem;
         }
 
         p {
-            margin-bottom: 25px;
+            margin-bottom: 2.5rem;
         }
     }
 
     &__nav {
-        margin-top: 35px;
+        margin-top: 3.5rem;
     }
 
     &__item {
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 1.4;
         font-weight: 600;
         letter-spacing: 1.5px;
@@ -64,16 +64,16 @@
         &::after {
             content: '';
             position: absolute;
-            left: -125px;
+            left: -12.5rem;
             height: 1px;
-            width: 90px;
+            width: 9rem;
             margin: 5px auto 0;
             background-color: transparent;
             z-index: -1;
         }
 
         &:not(:last-child) {
-            margin-bottom: 25px;
+            margin-bottom: 2.5rem;
         }
 
         &:hover {

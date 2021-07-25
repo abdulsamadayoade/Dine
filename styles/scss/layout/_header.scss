@@ -4,26 +4,26 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    padding: 50px 0 200px;
+    padding: 5rem 0 20rem;
 
     &__logo {
         img {
-            width: 103px;
+            width: 10.3rem;
         }
     }
 
     &__textBox {
         color: $color-white;
-        margin-top: 150px;
-        max-width: 550px;
+        margin-top: 15rem;
+        max-width: 55rem;
 
         &--heading {
             letter-spacing: -1px;
-            margin-bottom: 23px;
+            margin-bottom: 2.3rem;
         }
 
         &--subheading {
-            margin-bottom: 40px;
+            margin-bottom: 4rem;
             max-width: 75%;
         }
     }

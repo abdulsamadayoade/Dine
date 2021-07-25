@@ -1,66 +1,65 @@
 .features {
     background-image: url('../../../images/patterns/pattern-curve-top-right.svg'), url('../../../images/patterns/pattern-curve-top-left.svg');
     background-repeat: no-repeat;
-    background-position: top 322px left, bottom 10px right;
-    margin-top: -180px;
+    background-position: top 32.2rem left, bottom 1rem right;
+    margin-top: -8rem;
 
     &__inner {
         display: flex;
         justify-content: space-between;
-        margin-top: 116px;
+        height: 55rem;
+        margin-bottom: 12rem;
     }
 
     &__imgBox {
-        width: 100%;
-        max-width: 650px;
-        margin: 0 auto;
-
-        img {
-            box-shadow: $blured-shadow;
-            max-width: 100%;
-            max-height: 100%;
-        }
+        flex-basis: 40%;
+        background-image: url('../../../images/homepage/enjoyable-place-desktop.jpg');
+        background-size: cover;
+        box-shadow: $blured-shadow;
     }
 
     &__textBox {
-        padding-left: 100px;
+        flex: 1;
+        padding-left: 10rem;
 
         h2 {
-            margin: 220px 0 16px 0;
+            margin: 22rem 0 1.5rem;
             width: 85%;
 
             &::before {
                 content: url('../../../images/patterns/pattern-divide.svg');
                 display: block;
                 width: 100%;
-                height: 87px;
+                height: 8.5rem;
             }
         }
     }
 
     &__inner:last-child {
         flex-direction: row-reverse;
+        margin-bottom: -12rem;
 
         .features__imgBox {
             position: relative;
+            background-image: url('../../../images/homepage/locally-sourced-desktop.jpg');
 
             &::after {
                 content: url('../../../images/patterns/pattern-lines.svg');
                 display: block;
                 position: absolute;
-                right: 40px;
-                bottom: 63px;
-                width: 160px;
-                height: 76px;
+                right: -7rem;
+                top: 6rem;
+                width: 16rem;
+                height: 8rem;
             }
         }
 
         .features__textBox {
             padding-left: 0;
-            padding-right: 100px;
+            padding-right: 10rem;
 
             h2 {
-                margin: 150px 0 16px 0;
+                margin: 15rem 0 1.6rem;
             }
         }
     }

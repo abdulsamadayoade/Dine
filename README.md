@@ -1,2 +1,2 @@
 # Dine
- a landing page for a restaurant
+A two pages website for a restaurant.

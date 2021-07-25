@@ -1,24 +1,24 @@
 .footer {
     background-color: $color-gray-dark;
-    padding: 80px 0;
+    padding: 8rem 0;
 
     &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        gap: 3rem;
         justify-content: flex-start;
     }
 
     &__logo {
         img {
-            width: 103px;
+            width: 10.3rem;
         }
     }
 
     li {
         letter-spacing: 1.35px;
         margin-bottom: 1.2rem;
-        font-size: 14px;
+        font-size: 1.4rem;
         text-transform: uppercase;
     }
 }
