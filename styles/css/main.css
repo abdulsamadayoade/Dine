@@ -75,8 +75,14 @@ h2 {
   letter-spacing: -0.5px;
 }
 
+@media screen and (max-width: 770px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 2.8rem;
 }
@@ -139,7 +145,7 @@ p {
 .container {
   max-width: 110rem;
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 0 3rem;
 }
 
 .header {
@@ -212,6 +218,12 @@ p {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .features {
+    background: none;
+  }
+}
+
 .features__inner {
   display: flex;
   justify-content: space-between;
@@ -243,6 +255,20 @@ p {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .features__imgBox {
+    width: 58%;
+    height: 47rem;
+    background-image: url("../../../images/homepage/enjoyable-place-mobile.jpg");
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .features__imgBox {
+    width: 70%;
+  }
+}
+
 .features__textBox {
   width: 60%;
   padding-left: 10rem;
@@ -253,6 +279,12 @@ p {
     width: 70%;
     text-align: center;
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .features__textBox {
+    width: 100%;
   }
 }
 
@@ -305,6 +337,12 @@ p {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .features__inner:last-child .features__imgBox {
+    background-image: url("../../../images/homepage/locally-sourced-mobile.jpg");
+  }
+}
+
 .features__inner:last-child .features__imgBox::after {
   content: url("../../../images/patterns/pattern-lines.svg");
   display: block;
@@ -321,6 +359,12 @@ p {
   }
 }
 
+@media screen and (max-width: 770px) {
+  .features__inner:last-child .features__imgBox::after {
+    display: none;
+  }
+}
+
 .features__inner:last-child .features__textBox {
   padding-left: 0;
   padding-right: 10rem;
@@ -331,6 +375,12 @@ p {
     width: 70%;
     text-align: center;
     padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .features__inner:last-child .features__textBox {
+    width: 100%;
   }
 }
 
@@ -402,6 +452,8 @@ p {
   height: 6.5rem;
   position: absolute;
   top: -8.7rem;
+  display: flex;
+  justify-content: center;
 }
 
 .highlights__dishes {
@@ -450,6 +502,24 @@ p {
   border-bottom: 1px solid #242b37;
 }
 
+@media screen and (max-width: 770px) {
+  .highlights__dish {
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlights__dish--textBox {
+    padding-left: 0;
+    text-align: center;
+    padding: 3.5rem 0 2rem;
+  }
+  .highlights__dish--textBox h3 {
+    font-size: 1.8rem;
+  }
+  .highlights__dish--textBox p {
+    font-size: 1.7rem;
+  }
+}
+
 .events {
   background-image: url("../../../images/patterns/pattern-curve-top-right.svg");
   background-repeat: no-repeat;
@@ -460,6 +530,12 @@ p {
 @media screen and (max-width: 1200px) {
   .events {
     background-position: top left -60rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .events {
+    background: none;
   }
 }
 
@@ -485,6 +561,13 @@ p {
   position: relative;
 }
 
+@media screen and (max-width: 770px) {
+  .events__imgBox {
+    max-width: 65rem;
+    margin: 0 auto;
+  }
+}
+
 .events__imgBox::before {
   content: url("../../../images/patterns/pattern-lines.svg");
   position: absolute;
@@ -500,6 +583,12 @@ p {
   }
 }
 
+@media screen and (max-width: 770px) {
+  .events__imgBox::before {
+    display: none;
+  }
+}
+
 .events__imgBox img {
   width: 90%;
   box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
@@ -510,6 +599,12 @@ p {
   .events__imgBox img {
     width: 60%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .events__imgBox img {
+    width: 70%;
   }
 }
 
@@ -549,6 +644,12 @@ p {
   }
 }
 
+@media screen and (max-width: 770px) {
+  .events__nav {
+    flex-direction: column;
+  }
+}
+
 .events__item {
   font-size: 1.4rem;
   line-height: 1.4;
@@ -579,6 +680,12 @@ p {
   }
 }
 
+@media screen and (max-width: 770px) {
+  .events__item::after {
+    bottom: -.5rem;
+  }
+}
+
 .events__item:not(:last-child) {
   margin-bottom: 2.5rem;
 }
@@ -587,6 +694,13 @@ p {
   .events__item:not(:last-child) {
     margin-bottom: 0;
     margin-right: 5rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .events__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -631,6 +745,13 @@ p {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .reservation__inner h2 {
+    text-align: center;
+    line-height: 5rem;
+  }
+}
+
 .footer {
   background-color: #111111;
   padding: 8rem 0;
@@ -646,6 +767,14 @@ p {
   .footer__grid {
     grid-template-areas: "box1 box2" ". box3";
     gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .footer__grid {
+    grid-template-areas: "box1" "box2" "box3";
+    justify-content: center;
+    text-align: center;
   }
 }
 

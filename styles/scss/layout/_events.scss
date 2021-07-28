@@ -8,6 +8,10 @@
         background-position: top left -60rem;
     }
 
+    @media screen and (max-width: 540px) {
+        background: none;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -28,6 +32,11 @@
     &__imgBox {
         position: relative;
 
+        @media screen and (max-width: 770px) {
+            max-width: 65rem;
+            margin: 0 auto;
+        }
+
         &::before {
             content: url('../../../images/patterns/pattern-lines.svg');
             position: absolute;
@@ -39,6 +48,9 @@
             @media screen and (max-width: 1200px) {
                 left: 12rem;
             }
+            @media screen and (max-width: 770px) {
+                display: none;
+            }
         }
 
         img {
@@ -49,6 +61,10 @@
             @media screen and (max-width: 1200px) {
                 width: 60%;
                 margin: 0 auto;
+            }
+
+            @media screen and (max-width: 540px) {
+                width: 70%;
             }
         }
 
@@ -83,6 +99,10 @@
             display: flex;
             justify-content: center;
         }
+
+        @media screen and (max-width: 770px) {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -110,6 +130,10 @@
                 bottom: -1rem;
                 width: 5rem;
             }
+
+            @media screen and (max-width: 770px) {
+                bottom: -.5rem;
+            }
         }
 
         &:not(:last-child) {
@@ -118,6 +142,11 @@
             @media screen and (max-width: 1200px) {
                 margin-bottom: 0;
                 margin-right: 5rem;
+            }
+
+            @media screen and (max-width: 770px) {
+                margin-right: 0;
+                margin-bottom: 3.5rem;
             }
         }
 

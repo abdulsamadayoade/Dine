@@ -14,6 +14,16 @@
             ;
             gap: 5rem;
         }
+
+        @media screen and (max-width: 770px) {
+            grid-template-areas: 
+            "box1"
+            "box2"
+            "box3"
+            ;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     &__logo {

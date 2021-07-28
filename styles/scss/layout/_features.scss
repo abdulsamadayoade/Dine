@@ -7,6 +7,10 @@
         background-position: top 32.2rem left -50rem, bottom 1rem right -50rem;
     }
 
+    @media screen and (max-width: 540px) {
+        background: none;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -32,6 +36,16 @@
             height: 40rem;
             background-image: url('../../../images/homepage/enjoyable-place-tablet.jpg');
         }
+
+        @media screen and (max-width: 700px) {
+            width: 58%;
+            height: 47rem;
+            background-image: url('../../../images/homepage/enjoyable-place-mobile.jpg');
+        }
+
+        @media screen and (max-width: 540px) {
+            width: 70%;
+        }
     }
 
     &__textBox {
@@ -42,6 +56,10 @@
             width: 70%;
             text-align: center;
             padding-left: 0;
+        }
+
+        @media screen and (max-width: 700px) {
+            width: 100%;
         }
 
         h2 {
@@ -86,6 +104,10 @@
                 background-image: url('../../../images/homepage/locally-sourced-tablet.jpg');
             }
 
+            @media screen and (max-width: 1200px) {
+                background-image: url('../../../images/homepage/locally-sourced-mobile.jpg');
+            }
+
             &::after {
                 content: url('../../../images/patterns/pattern-lines.svg');
                 display: block;
@@ -98,6 +120,10 @@
                 @media screen and (max-width: 1200px) {
                     top: 20rem;
                 }
+
+                @media screen and (max-width: 770px) {
+                    display: none;
+                }
             }
         }
 
@@ -109,6 +135,10 @@
                 width: 70%;
                 text-align: center;
                 padding-right: 0;
+            }
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
             }
 
             h2 {

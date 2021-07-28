@@ -20,5 +20,12 @@
                 margin-top: 3rem;
             }
         }
+
+        @media screen and (max-width: 540px) {
+            h2 {
+                text-align: center;
+                line-height: 5rem;
+            }
+        }
     }
 }
