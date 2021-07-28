@@ -457,6 +457,12 @@ p {
   padding: 15rem 0 8rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .events {
+    background-position: top left -60rem;
+  }
+}
+
 .events__inner {
   display: flex;
   justify-content: space-between;
@@ -464,6 +470,15 @@ p {
 
 .events__inner > * {
   width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .events__inner {
+    flex-direction: column;
+  }
+  .events__inner > * {
+    width: 100%;
+  }
 }
 
 .events__imgBox {
@@ -479,10 +494,23 @@ p {
   left: -5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .events__imgBox::before {
+    left: 12rem;
+  }
+}
+
 .events__imgBox img {
   width: 90%;
   box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
   display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .events__imgBox img {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 .events__imgBox .showImage {
@@ -491,6 +519,14 @@ p {
 
 .events__textBox {
   padding: 6rem 5rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .events__textBox {
+    text-align: center;
+  }
 }
 
 .events__textBox h2 {
@@ -503,6 +539,14 @@ p {
 
 .events__nav {
   margin-top: 3.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .events__nav {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .events__item {
@@ -526,8 +570,24 @@ p {
   z-index: -1;
 }
 
+@media screen and (max-width: 1200px) {
+  .events__item::after {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+    width: 5rem;
+  }
+}
+
 .events__item:not(:last-child) {
   margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .events__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 5rem;
+  }
 }
 
 .events__item:hover {

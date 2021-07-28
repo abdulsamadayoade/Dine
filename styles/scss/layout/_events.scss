@@ -4,12 +4,24 @@
     background-position: top left -40rem;
     padding: 15rem 0 8rem;
 
+    @media screen and (max-width: 1200px) {
+        background-position: top left -60rem;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
 
         > * {
             width: 50%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+
+            > * {
+                width: 100%;  
+            }  
         }
     }
 
@@ -23,12 +35,21 @@
             width: 16rem;
             top: -3.8rem;
             left: -5rem;
+
+            @media screen and (max-width: 1200px) {
+                left: 12rem;
+            }
         }
 
         img {
             width: 90%;
             box-shadow: $blured-shadow;
             display: none;
+
+            @media screen and (max-width: 1200px) {
+                width: 60%;
+                margin: 0 auto;
+            }
         }
 
         .showImage {
@@ -38,6 +59,12 @@
 
     &__textBox {
         padding: 6rem 5rem;
+        max-width: 80rem;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1200px) {
+            text-align: center;
+        }
 
         h2 {
             margin-bottom: 2rem;
@@ -50,6 +77,12 @@
 
     &__nav {
         margin-top: 3.5rem;
+
+        @media screen and (max-width: 1200px) {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -70,10 +103,22 @@
             margin: 5px auto 0;
             background-color: transparent;
             z-index: -1;
+
+            @media screen and (max-width: 1200px) {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -1rem;
+                width: 5rem;
+            }
         }
 
         &:not(:last-child) {
             margin-bottom: 2.5rem;
+
+            @media screen and (max-width: 1200px) {
+                margin-bottom: 0;
+                margin-right: 5rem;
+            }
         }
 
         &:hover {
