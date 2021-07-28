@@ -526,8 +526,10 @@ p {
   position: relative;
 }
 
-.highlights__dish--imgBox img {
-  width: 100%;
+@media screen and (max-width: 1200px) {
+  .highlights__dish--imgBox img {
+    width: 100%;
+  }
 }
 
 .highlights__dish--imgBox::after {
