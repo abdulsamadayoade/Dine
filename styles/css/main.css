@@ -638,13 +638,31 @@ p {
 
 .footer__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "box1 box2 box3";
   gap: 3rem;
-  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__grid {
+    grid-template-areas: "box1 box2" ". box3";
+    gap: 5rem;
+  }
+}
+
+.footer__logo {
+  grid-area: box1;
 }
 
 .footer__logo img {
   width: 10.3rem;
+}
+
+.footer__address {
+  grid-area: box2;
+}
+
+.footer__openTimes {
+  grid-area: box3;
 }
 
 .footer li {

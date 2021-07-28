@@ -4,15 +4,32 @@
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "box1 box2 box3";
         gap: 3rem;
-        justify-content: flex-start;
+
+        @media screen and (max-width: 1200px) {
+            grid-template-areas: 
+            "box1 box2"
+            ". box3"
+            ;
+            gap: 5rem;
+        }
     }
 
     &__logo {
+        grid-area: box1;
+
         img {
             width: 10.3rem;
         }
+    }
+
+    &__address {
+        grid-area: box2;
+    }
+
+    &__openTimes {
+        grid-area: box3;
     }
 
     li {
