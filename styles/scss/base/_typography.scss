@@ -9,6 +9,10 @@ h1 {
     font-size: 6.4rem;
     line-height: 7.2rem;
     letter-spacing: -0.5px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 4.8rem;
+    }
 }
 
 h2 {

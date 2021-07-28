@@ -63,6 +63,12 @@ h1 {
   letter-spacing: -0.5px;
 }
 
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+
 h2 {
   font-size: 4rem;
   line-height: 5.6rem;
@@ -145,6 +151,17 @@ p {
   padding: 5rem 0 20rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .header {
+    background-image: url("../../../images/homepage/hero-bg-tablet.jpg");
+  }
+}
+
+.header__inner {
+  margin-top: 50rem;
+  text-align: center;
+}
+
 .header__logo img {
   width: 10.3rem;
 }
@@ -153,6 +170,15 @@ p {
   color: #FFFFFF;
   margin-top: 15rem;
   max-width: 55rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .header__textBox {
+    margin: auto;
+    margin-top: 3rem;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
 .header__textBox--heading {
@@ -165,11 +191,23 @@ p {
   max-width: 75%;
 }
 
+@media screen and (max-width: 1200px) {
+  .header__textBox--subheading {
+    max-width: 80%;
+    margin: 0 auto 4rem;
+  }
+}
+
 .features {
   background-image: url("../../../images/patterns/pattern-curve-top-right.svg"), url("../../../images/patterns/pattern-curve-top-left.svg");
   background-repeat: no-repeat;
   background-position: top 32.2rem left, bottom 1rem right;
-  margin-top: -8rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .features {
+    background-position: top 32.2rem left -50rem, bottom 1rem right -50rem;
+  }
 }
 
 .features__inner {
@@ -179,21 +217,53 @@ p {
   margin-bottom: 12rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .features__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: initial;
+  }
+}
+
 .features__imgBox {
-  flex-basis: 40%;
+  width: 40%;
   background-image: url("../../../images/homepage/enjoyable-place-desktop.jpg");
   background-size: cover;
   box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
 }
 
+@media screen and (max-width: 1200px) {
+  .features__imgBox {
+    width: 60%;
+    height: 40rem;
+    background-image: url("../../../images/homepage/enjoyable-place-tablet.jpg");
+  }
+}
+
 .features__textBox {
-  flex: 1;
+  width: 60%;
   padding-left: 10rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .features__textBox {
+    width: 70%;
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
 .features__textBox h2 {
   margin: 22rem 0 1.5rem;
   width: 85%;
+}
+
+@media screen and (max-width: 1200px) {
+  .features__textBox h2 {
+    margin: 3rem auto 1.5rem;
+    width: 70%;
+  }
 }
 
 .features__textBox h2::before {
@@ -203,9 +273,23 @@ p {
   height: 8.5rem;
 }
 
+.features__inner:first-child {
+  margin-top: -6rem;
+}
+
 .features__inner:last-child {
   flex-direction: row-reverse;
-  margin-bottom: -12rem;
+  margin-bottom: -6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .features__inner:last-child {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: initial;
+    margin-bottom: 0;
+  }
 }
 
 .features__inner:last-child .features__imgBox {
@@ -213,14 +297,26 @@ p {
   background-image: url("../../../images/homepage/locally-sourced-desktop.jpg");
 }
 
+@media screen and (max-width: 1200px) {
+  .features__inner:last-child .features__imgBox {
+    background-image: url("../../../images/homepage/locally-sourced-tablet.jpg");
+  }
+}
+
 .features__inner:last-child .features__imgBox::after {
   content: url("../../../images/patterns/pattern-lines.svg");
   display: block;
   position: absolute;
-  right: -7rem;
+  right: -5rem;
   top: 6rem;
-  width: 16rem;
-  height: 8rem;
+  width: 18rem;
+  height: 9rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .features__inner:last-child .features__imgBox::after {
+    top: 20rem;
+  }
 }
 
 .features__inner:last-child .features__textBox {
@@ -228,8 +324,23 @@ p {
   padding-right: 10rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .features__inner:last-child .features__textBox {
+    width: 70%;
+    text-align: center;
+    padding-right: 0;
+  }
+}
+
 .features__inner:last-child .features__textBox h2 {
   margin: 15rem 0 1.6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .features__inner:last-child .features__textBox h2 {
+    margin: 3rem auto 1.5rem;
+    width: 70%;
+  }
 }
 
 .highlights {

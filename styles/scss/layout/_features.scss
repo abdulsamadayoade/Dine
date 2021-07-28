@@ -2,29 +2,56 @@
     background-image: url('../../../images/patterns/pattern-curve-top-right.svg'), url('../../../images/patterns/pattern-curve-top-left.svg');
     background-repeat: no-repeat;
     background-position: top 32.2rem left, bottom 1rem right;
-    margin-top: -8rem;
+
+    @media screen and (max-width: 1200px) {
+        background-position: top 32.2rem left -50rem, bottom 1rem right -50rem;
+    }
 
     &__inner {
         display: flex;
         justify-content: space-between;
         height: 55rem;
         margin-bottom: 12rem;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: initial;
+        }
     }
 
     &__imgBox {
-        flex-basis: 40%;
+        width: 40%;
         background-image: url('../../../images/homepage/enjoyable-place-desktop.jpg');
         background-size: cover;
         box-shadow: $blured-shadow;
+
+        @media screen and (max-width: 1200px) {
+            width: 60%;
+            height: 40rem;
+            background-image: url('../../../images/homepage/enjoyable-place-tablet.jpg');
+        }
     }
 
     &__textBox {
-        flex: 1;
+        width: 60%;
         padding-left: 10rem;
+
+        @media screen and (max-width: 1200px) {
+            width: 70%;
+            text-align: center;
+            padding-left: 0;
+        }
 
         h2 {
             margin: 22rem 0 1.5rem;
             width: 85%;
+
+            @media screen and (max-width: 1200px) {
+               margin: 3rem auto 1.5rem;
+               width: 70%;
+            }
 
             &::before {
                 content: url('../../../images/patterns/pattern-divide.svg');
@@ -35,22 +62,42 @@
         }
     }
 
+    &__inner:first-child {
+        margin-top: -6rem;
+    }
+
     &__inner:last-child {
         flex-direction: row-reverse;
-        margin-bottom: -12rem;
+        margin-bottom: -6rem;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: initial;
+            margin-bottom: 0;
+        }
 
         .features__imgBox {
             position: relative;
             background-image: url('../../../images/homepage/locally-sourced-desktop.jpg');
 
+            @media screen and (max-width: 1200px) {
+                background-image: url('../../../images/homepage/locally-sourced-tablet.jpg');
+            }
+
             &::after {
                 content: url('../../../images/patterns/pattern-lines.svg');
                 display: block;
                 position: absolute;
-                right: -7rem;
+                right: -5rem;
                 top: 6rem;
-                width: 16rem;
-                height: 8rem;
+                width: 18rem;
+                height: 9rem;
+
+                @media screen and (max-width: 1200px) {
+                    top: 20rem;
+                }
             }
         }
 
@@ -58,8 +105,19 @@
             padding-left: 0;
             padding-right: 10rem;
 
+            @media screen and (max-width: 1200px) {
+                width: 70%;
+                text-align: center;
+                padding-right: 0;
+            }
+
             h2 {
                 margin: 15rem 0 1.6rem;
+
+                @media screen and (max-width: 1200px) {
+                    margin: 3rem auto 1.5rem;
+                    width: 70%;
+                 }
             }
         }
     }

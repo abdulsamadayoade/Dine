@@ -6,6 +6,15 @@
     background-size: cover;
     padding: 5rem 0 20rem;
 
+    @media screen and (max-width: 1200px) {
+        background-image: url('../../../images/homepage/hero-bg-tablet.jpg');
+    }
+
+    &__inner {
+        margin-top: 50rem;
+        text-align: center;
+    }
+
     &__logo {
         img {
             width: 10.3rem;
@@ -17,6 +26,13 @@
         margin-top: 15rem;
         max-width: 55rem;
 
+        @media screen and (max-width: 1200px) {
+            margin:  auto;
+            margin-top: 3rem;
+            max-width: 100%;
+            text-align: center;
+        }
+
         &--heading {
             letter-spacing: -1px;
             margin-bottom: 2.3rem;
@@ -25,6 +41,11 @@
         &--subheading {
             margin-bottom: 4rem;
             max-width: 75%;
+
+            @media screen and (max-width: 1200px) {
+                max-width: 80%;
+                margin: 0 auto 4rem;
+            }
         }
     }
 }
