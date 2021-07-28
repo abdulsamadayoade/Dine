@@ -1,10 +1,24 @@
 .reservation {
     background-image: url('../../../images/homepage/ready-bg-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 9rem 0 7rem;
+
+    @media screen and (max-width: 1200px) {
+        background-image: url('../../../images/homepage/ready-bg-tablet.jpg');
+    }
 
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+
+            .btn {
+                margin-top: 3rem;
+            }
+        }
     }
 }

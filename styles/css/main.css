@@ -605,13 +605,30 @@ p {
 
 .reservation {
   background-image: url("../../../images/homepage/ready-bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 9rem 0 7rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .reservation {
+    background-image: url("../../../images/homepage/ready-bg-tablet.jpg");
+  }
 }
 
 .reservation__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .reservation__inner {
+    flex-direction: column;
+  }
+  .reservation__inner .btn {
+    margin-top: 3rem;
+  }
 }
 
 .footer {
