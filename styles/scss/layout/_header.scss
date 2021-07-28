@@ -10,9 +10,13 @@
         background-image: url('../../../images/homepage/hero-bg-tablet.jpg');
     }
 
+    @media screen and (max-width: 540px) {
+        background-image: url('../../../images/homepage/hero-bg-mobile.jpg');
+    }
+
     &__inner {
         @media screen and (max-width: 1200px) {
-            margin-top: 50rem;
+            margin-top: 30rem;
             text-align: center;
         }
     }
@@ -25,7 +29,7 @@
 
     &__textBox {
         color: $color-white;
-        margin-top: 15rem;
+        margin-top: 17rem;
         max-width: 55rem;
 
         @media screen and (max-width: 1200px) {
@@ -46,6 +50,11 @@
 
             @media screen and (max-width: 1200px) {
                 max-width: 80%;
+                margin: 0 auto 4rem;
+            }
+
+            @media screen and (max-width: 420px) {
+                max-width: 1000%;
                 margin: 0 auto 4rem;
             }
         }

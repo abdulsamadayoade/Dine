@@ -69,6 +69,13 @@ h1 {
   }
 }
 
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 5.3rem;
+  }
+}
+
 h2 {
   font-size: 4rem;
   line-height: 5.6rem;
@@ -163,9 +170,15 @@ p {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .header {
+    background-image: url("../../../images/homepage/hero-bg-mobile.jpg");
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .header__inner {
-    margin-top: 50rem;
+    margin-top: 30rem;
     text-align: center;
   }
 }
@@ -176,7 +189,7 @@ p {
 
 .header__textBox {
   color: #FFFFFF;
-  margin-top: 15rem;
+  margin-top: 17rem;
   max-width: 55rem;
 }
 
@@ -202,6 +215,13 @@ p {
 @media screen and (max-width: 1200px) {
   .header__textBox--subheading {
     max-width: 80%;
+    margin: 0 auto 4rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header__textBox--subheading {
+    max-width: 1000%;
     margin: 0 auto 4rem;
   }
 }
@@ -265,7 +285,7 @@ p {
 
 @media screen and (max-width: 540px) {
   .features__imgBox {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -297,6 +317,12 @@ p {
   .features__textBox h2 {
     margin: 3rem auto 1.5rem;
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .features__textBox h2 {
+    width: 100%;
   }
 }
 
@@ -395,6 +421,12 @@ p {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .features__inner:last-child .features__textBox h2 {
+    width: 100%;
+  }
+}
+
 .highlights {
   background: #111111;
   margin-top: 5rem;
@@ -466,6 +498,12 @@ p {
   }
 }
 
+@media screen and (max-width: 540px) {
+  .highlights__dishes {
+    width: 100%;
+  }
+}
+
 .highlights__dish {
   display: flex;
   padding: 2rem 0;
@@ -488,6 +526,10 @@ p {
   position: relative;
 }
 
+.highlights__dish--imgBox img {
+  width: 100%;
+}
+
 .highlights__dish--imgBox::after {
   content: '';
   position: absolute;
@@ -496,6 +538,12 @@ p {
   background-color: #9e7f66;
   top: 1.7rem;
   left: 12.8rem;
+}
+
+@media screen and (max-width: 540px) {
+  .highlights__dish--imgBox::after {
+    display: none;
+  }
 }
 
 .highlights__dish:not(:last-child) {
@@ -604,7 +652,7 @@ p {
 
 @media screen and (max-width: 540px) {
   .events__imgBox img {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -621,6 +669,12 @@ p {
 @media screen and (max-width: 1200px) {
   .events__textBox {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .events__textBox {
+    padding: 6rem 0;
   }
 }
 
