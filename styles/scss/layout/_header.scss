@@ -11,8 +11,10 @@
     }
 
     &__inner {
-        margin-top: 50rem;
-        text-align: center;
+        @media screen and (max-width: 1200px) {
+            margin-top: 50rem;
+            text-align: center;
+        }
     }
 
     &__logo {

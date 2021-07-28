@@ -68,7 +68,7 @@
 
     &__inner:last-child {
         flex-direction: row-reverse;
-        margin-bottom: -6rem;
+        margin-bottom: -10rem;
 
         @media screen and (max-width: 1200px) {
             flex-direction: column;
