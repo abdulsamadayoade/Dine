@@ -856,3 +856,28 @@ p {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
+
+.headerBooking {
+  height: 90vh;
+  background-image: url("../../../images/booking/hero-bg-desktop.jpg");
+  background-size: cover;
+  padding-top: 7rem;
+  color: #FFFFFF;
+  margin-bottom: 30rem;
+}
+
+.headerBooking__inner {
+  margin-top: 12rem;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 8rem;
+}
+
+.headerBooking__form {
+  height: 60rem;
+  border: 1px solid red;
+}
+
+.headerBooking h1 {
+  margin-bottom: 2rem;
+}
