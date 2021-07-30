@@ -5,19 +5,50 @@
     padding-top: 7rem;
     margin-bottom: 32rem;
 
+    
+    @media only screen and (max-width: 1200px) {
+        margin-bottom: 43rem;
+    }
+
+    &__logo {
+        img {
+            @media only screen and (max-width: 768px) {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+
     &__inner {
         margin-top: 10rem;
         display: grid;
         grid-template-columns: 40% 1fr;
-        gap: 8rem
+        gap: 8rem;
+
+        @media only screen and (max-width: 1200px) {
+            grid-template-columns: 1fr;
+            margin-top: 4rem;
+            gap: 4rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            gap: 8rem;
+        }
     }
 
     &__text {
         color: $color-white;
+        max-width: 85rem;
+        margin: 0 auto;
+        text-align: center;
     }
 
     h1 {
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: 1200px) {
+            margin-bottom: 1rem;
+        }
     }
 
     .form {
@@ -25,6 +56,16 @@
         background-color: $color-white;
         position: relative;
         padding: 2.7rem 10% 3.2rem 10%;
+
+        @media only screen and (max-width: 1200px) {
+            max-width: 55rem;
+            margin: 0 auto;
+            padding: 3rem 5rem;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            max-width: 100%;
+        }
 
         &::after {
             content: url('../../../images/patterns/pattern-lines.svg');
@@ -35,6 +76,10 @@
             width: 16rem;
             height: 7.6rem;
             z-index: -1;
+
+            @media only screen and (max-width: 1200px) {
+                display: none;
+            }
         }
 
         &__group {
@@ -75,11 +120,11 @@
             }
 
             @media only screen and (max-width: 768px) {
-                flex-direction: column;
+                display: block;
 
                 label {
-                    flex: 0 0 100%;
-                    margin-right: 0;
+                    display: block;
+                    margin-bottom: .5rem;
                 }
             }
         }

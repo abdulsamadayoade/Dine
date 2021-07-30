@@ -867,6 +867,19 @@ p {
   margin-bottom: 32rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .headerBooking {
+    margin-bottom: 43rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headerBooking__logo img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 .headerBooking__inner {
   margin-top: 10rem;
   display: grid;
@@ -874,12 +887,35 @@ p {
   gap: 8rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .headerBooking__inner {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+    gap: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headerBooking__inner {
+    gap: 8rem;
+  }
+}
+
 .headerBooking__text {
   color: #FFFFFF;
+  max-width: 85rem;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .headerBooking h1 {
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .headerBooking h1 {
+    margin-bottom: 1rem;
+  }
 }
 
 .headerBooking .form {
@@ -887,6 +923,20 @@ p {
   background-color: #FFFFFF;
   position: relative;
   padding: 2.7rem 10% 3.2rem 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .headerBooking .form {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 3rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .headerBooking .form {
+    max-width: 100%;
+  }
 }
 
 .headerBooking .form::after {
@@ -898,6 +948,12 @@ p {
   width: 16rem;
   height: 7.6rem;
   z-index: -1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .headerBooking .form::after {
+    display: none;
+  }
 }
 
 .headerBooking .form__group {
@@ -942,11 +998,11 @@ p {
 
 @media only screen and (max-width: 768px) {
   .headerBooking .form__group {
-    flex-direction: column;
+    display: block;
   }
   .headerBooking .form__group label {
-    flex: 0 0 100%;
-    margin-right: 0;
+    display: block;
+    margin-bottom: .5rem;
   }
 }
 
