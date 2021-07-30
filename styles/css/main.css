@@ -1035,7 +1035,7 @@ p {
   cursor: pointer;
 }
 
-.headerBooking .form__timeBox .-mirror {
+.headerBooking .form__timeBox .mirror {
   transform: scaleY(-1);
 }
 
