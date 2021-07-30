@@ -240,4 +240,8 @@
             }
         }
     }
+
+    .active {
+        border-bottom: 1px solid $color-gray-dark !important;
+    }
 }

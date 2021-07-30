@@ -1100,3 +1100,7 @@ p {
 .headerBooking .form .form__people .inactive {
   color: rgba(158, 127, 102, 0.1);
 }
+
+.headerBooking .active {
+  border-bottom: 1px solid #111111 !important;
+}
