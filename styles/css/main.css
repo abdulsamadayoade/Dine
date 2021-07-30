@@ -104,6 +104,7 @@ p {
 }
 
 .btn {
+  cursor: pointer;
   padding: 2.5rem 5.4rem;
   display: inline-block;
   font-size: 1.4rem;
@@ -863,11 +864,11 @@ p {
   background-image: url("../../../images/booking/hero-bg-desktop.jpg");
   background-size: cover;
   padding-top: 7rem;
-  margin-bottom: 25rem;
+  margin-bottom: 32rem;
 }
 
 .headerBooking__inner {
-  margin-top: 12rem;
+  margin-top: 10rem;
   display: grid;
   grid-template-columns: 40% 1fr;
   gap: 8rem;
@@ -884,7 +885,6 @@ p {
 .headerBooking .form {
   box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
   background-color: #FFFFFF;
-  height: 50rem;
   position: relative;
   padding: 2.7rem 10% 3.2rem 10%;
 }
@@ -1101,6 +1101,10 @@ p {
   color: rgba(158, 127, 102, 0.1);
 }
 
-.headerBooking .active {
+.headerBooking .form .active {
   border-bottom: 1px solid #111111 !important;
+}
+
+.headerBooking .form .btn {
+  width: 100%;
 }

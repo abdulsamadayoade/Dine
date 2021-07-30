@@ -3,10 +3,10 @@
     background-image: url('../../../images/booking/hero-bg-desktop.jpg');
     background-size: cover;
     padding-top: 7rem;
-    margin-bottom: 25rem;
+    margin-bottom: 32rem;
 
     &__inner {
-        margin-top: 12rem;
+        margin-top: 10rem;
         display: grid;
         grid-template-columns: 40% 1fr;
         gap: 8rem
@@ -23,7 +23,6 @@
     .form {
         box-shadow: $blured-shadow;
         background-color: $color-white;
-        height: 50rem;
         position: relative;
         padding: 2.7rem 10% 3.2rem 10%;
 
@@ -238,9 +237,13 @@
                 color: rgba($color-brown, 0.1);
             }
         }
-    }
 
-    .active {
-        border-bottom: 1px solid $color-gray-dark !important;
+        .active {
+            border-bottom: 1px solid $color-gray-dark !important;
+        }
+
+        .btn {
+            width: 100%;
+        }
     }
 }
