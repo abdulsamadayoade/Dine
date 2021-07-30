@@ -114,6 +114,8 @@ p {
   letter-spacing: 2px;
   position: relative;
   overflow: hidden;
+  outline: none;
+  border: none;
 }
 
 .btn span {
@@ -891,7 +893,7 @@ p {
   .headerBooking__inner {
     grid-template-columns: 1fr;
     margin-top: 4rem;
-    gap: 4rem;
+    gap: 6rem;
   }
 }
 
@@ -903,9 +905,14 @@ p {
 
 .headerBooking__text {
   color: #FFFFFF;
-  max-width: 85rem;
-  margin: 0 auto;
-  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .headerBooking__text {
+    max-width: 85rem;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .headerBooking h1 {
@@ -1163,4 +1170,10 @@ p {
 
 .headerBooking .form .btn {
   width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  .headerBooking .form .btn {
+    line-height: 1.45;
+  }
 }

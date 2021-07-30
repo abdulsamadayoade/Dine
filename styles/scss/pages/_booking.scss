@@ -28,7 +28,7 @@
         @media only screen and (max-width: 1200px) {
             grid-template-columns: 1fr;
             margin-top: 4rem;
-            gap: 4rem;
+            gap: 6rem;
         }
 
         @media only screen and (max-width: 768px) {
@@ -38,9 +38,12 @@
 
     &__text {
         color: $color-white;
-        max-width: 85rem;
-        margin: 0 auto;
-        text-align: center;
+
+        @media only screen and (max-width: 1200px) {
+            max-width: 85rem;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     h1 {
@@ -289,6 +292,10 @@
 
         .btn {
             width: 100%;
+
+            @media only screen and (max-width: 400px) {
+                line-height: 1.45;
+            }
         }
     }
 }
