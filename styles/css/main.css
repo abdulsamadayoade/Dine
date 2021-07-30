@@ -40,6 +40,7 @@ html {
 
 body {
   box-sizing: border-box;
+  color: #242b37;
 }
 
 ul {
@@ -862,8 +863,7 @@ p {
   background-image: url("../../../images/booking/hero-bg-desktop.jpg");
   background-size: cover;
   padding-top: 7rem;
-  color: #FFFFFF;
-  margin-bottom: 30rem;
+  margin-bottom: 25rem;
 }
 
 .headerBooking__inner {
@@ -873,11 +873,230 @@ p {
   gap: 8rem;
 }
 
-.headerBooking__form {
-  height: 60rem;
-  border: 1px solid red;
+.headerBooking__text {
+  color: #FFFFFF;
 }
 
 .headerBooking h1 {
   margin-bottom: 2rem;
+}
+
+.headerBooking .form {
+  box-shadow: 0px 49px 79px 0px rgba(0, 0, 0, 0.4);
+  background-color: #FFFFFF;
+  height: 50rem;
+  position: relative;
+  padding: 2.7rem 10% 3.2rem 10%;
+}
+
+.headerBooking .form::after {
+  content: url("../../../images/patterns/pattern-lines.svg");
+  display: block;
+  position: absolute;
+  left: -8.2rem;
+  bottom: -3.8rem;
+  width: 16rem;
+  height: 7.6rem;
+  z-index: -1;
+}
+
+.headerBooking .form__group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.headerBooking .form__group label {
+  flex: 0 0 25%;
+  margin-right: auto;
+}
+
+.headerBooking .form__group small {
+  color: #B54949;
+  font-size: 1rem;
+  position: absolute;
+  bottom: -1.8rem;
+  left: 0;
+  visibility: hidden;
+}
+
+.headerBooking .form__group.error input::placeholder {
+  color: #B54949;
+}
+
+.headerBooking .form__group.error small {
+  visibility: visible;
+}
+
+.headerBooking .form__group:not(:last-child) {
+  margin-bottom: 2.8rem;
+}
+
+.headerBooking .form__group-date {
+  margin-top: 3.7rem;
+}
+
+.headerBooking .form__group-time {
+  margin-top: 4.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .headerBooking .form__group {
+    flex-direction: column;
+  }
+  .headerBooking .form__group label {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+}
+
+.headerBooking .form .errorColor {
+  border-bottom: 1px solid #B54949;
+}
+
+.headerBooking .form input, .headerBooking .form select {
+  height: 5.1rem;
+  border: none;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.16);
+  font-size: inherit;
+  padding: 1rem;
+}
+
+.headerBooking .form input:focus, .headerBooking .form select:focus {
+  outline: none;
+  border-bottom: 1px solid #111111;
+}
+
+.headerBooking .form #name,
+.headerBooking .form #email {
+  width: 100%;
+}
+
+.headerBooking .form input[type=submit] {
+  background-color: #111111;
+  border: 1px solid #111111;
+  color: #FFFFFF;
+  line-height: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 31px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.headerBooking .form input[type=submit]:link, .headerBooking .form input[type=submit]:visited {
+  color: #FFFFFF;
+}
+
+.headerBooking .form input[type=submit]:hover, .headerBooking .form input[type=submit]:active {
+  background-color: #FFFFFF;
+  color: #111111;
+}
+
+.headerBooking .form label {
+  display: block;
+  text-align: left;
+}
+
+.headerBooking .form__dateBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerBooking .form__dateBox input:not(:last-child) {
+  flex: 0 0 27.76%;
+}
+
+.headerBooking .form__dateBox input:last-child {
+  flex: 0 0 33.46%;
+}
+
+.headerBooking .form__timeBox {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.headerBooking .form__timeBox input {
+  flex: 0 0 27.76%;
+}
+
+.headerBooking .form__timeBox .daytime__box {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.16);
+  padding: 14px;
+  flex: 0 0 33.46%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.headerBooking .form__timeBox .arrow {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.headerBooking .form__timeBox .-mirror {
+  transform: scaleY(-1);
+}
+
+.headerBooking .form__timeBox .daytime__options {
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 40px 0px rgba(112, 112, 112, 0.4);
+  transform: translateX(10px);
+  z-index: 10;
+  position: absolute;
+  bottom: -10rem;
+  right: 0;
+  padding: 2rem 2.5rem 2rem 1.5rem;
+}
+
+.headerBooking .form__timeBox .tick {
+  margin-right: 10px;
+}
+
+.headerBooking .form__timeBox .daytime__options-AM,
+.headerBooking .form__timeBox .daytime__options-PM {
+  cursor: pointer;
+}
+
+.headerBooking .form__timeBox .daytime__options-AM {
+  margin-bottom: 15px;
+}
+
+.headerBooking .form__timeBox .hidden {
+  opacity: 0;
+  z-index: -10;
+}
+
+.headerBooking .form .form__people {
+  display: flex;
+  margin-top: 4.2rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.16);
+  text-align: center;
+  width: 100%;
+}
+
+.headerBooking .form .form__people .form__people-count {
+  flex: 0 0 60%;
+}
+
+.headerBooking .form .form__people .signs {
+  flex: 0 0 20%;
+  color: #9e7f66;
+  cursor: pointer;
+  transition: transform .3s ease-in;
+}
+
+.headerBooking .form .form__people .signs:hover {
+  transform: scale(1.5);
+}
+
+.headerBooking .form .form__people .signs:active {
+  transform: scale(1.2);
+}
+
+.headerBooking .form .form__people .inactive {
+  color: rgba(158, 127, 102, 0.1);
 }

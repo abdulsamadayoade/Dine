@@ -3,8 +3,7 @@
     background-image: url('../../../images/booking/hero-bg-desktop.jpg');
     background-size: cover;
     padding-top: 7rem;
-    color: $color-white;
-    margin-bottom: 30rem;
+    margin-bottom: 25rem;
 
     &__inner {
         margin-top: 12rem;
@@ -13,12 +12,232 @@
         gap: 8rem
     }
 
-    &__form {
-        height: 60rem;
-        border: 1px solid red;
+    &__text {
+        color: $color-white;
     }
 
     h1 {
         margin-bottom: 2rem;
+    }
+
+    .form {
+        box-shadow: $blured-shadow;
+        background-color: $color-white;
+        height: 50rem;
+        position: relative;
+        padding: 2.7rem 10% 3.2rem 10%;
+
+        &::after {
+            content: url('../../../images/patterns/pattern-lines.svg');
+            display: block;
+            position: absolute;
+            left: -8.2rem;
+            bottom: -3.8rem;
+            width: 16rem;
+            height: 7.6rem;
+            z-index: -1;
+        }
+
+        &__group {
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            label {
+                flex: 0 0 25%;
+                margin-right: auto;
+            }
+
+            small {
+                color: $color-error;
+                font-size: 1rem;
+                position: absolute;
+                bottom: -1.8rem;
+                left: 0;
+                visibility: hidden;
+            }
+    
+            &.error input::placeholder {
+                color: $color-error;
+            }
+            &.error small {
+                visibility: visible;
+            }
+    
+            &:not(:last-child) {
+                margin-bottom: 2.8rem;
+            }
+    
+            &-date {
+                margin-top: 3.7rem;
+            }
+            &-time {
+                margin-top: 4.2rem;
+            }
+
+            @media only screen and (max-width: 768px) {
+                flex-direction: column;
+
+                label {
+                    flex: 0 0 100%;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .errorColor  {
+            border-bottom: 1px solid $color-error;
+        }
+
+        input,select {
+            height: 5.1rem;
+            border: none;
+            border-bottom: 1px solid rgba($color-gray-dark, 0.16);
+            font-size: inherit;
+            padding: 1rem;
+
+            &:focus {
+                outline: none;
+                border-bottom: 1px solid $color-gray-dark;
+            }
+        }
+
+        #name,
+        #email {
+            width: 100%;
+        }
+
+        input[type=submit] {
+            background-color: $color-gray-dark;
+            border: 1px solid $color-gray-dark;
+            color: $color-white;
+            line-height: 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 31px 0;
+            width: 100%;
+            cursor: pointer;
+
+            &:link,
+            &:visited {
+                color: $color-white;
+            }
+
+            &:hover,
+            &:active {
+                background-color: $color-white;
+                color: $color-gray-dark;
+            }
+        }
+
+        label {
+            display: block;
+            text-align: left;
+        }
+
+        &__dateBox {
+            display: flex;
+            justify-content: space-between;
+
+            input:not(:last-child) {
+                flex: 0 0 27.76%;
+            }
+            input:last-child {
+                flex: 0 0 33.46%;
+            }
+        }
+
+        &__timeBox {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            input {
+                flex: 0 0 27.76%;
+            }
+
+            .daytime__box {
+                border-bottom: 1px solid rgba($color-gray-dark, 0.16);
+                padding: 14px;
+                flex: 0 0 33.46%;
+                
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+            }
+
+            .arrow {
+                padding-left: 10px;
+                cursor: pointer;
+            }
+
+            // I don't know what this mirror is doing
+            .-mirror {
+                transform: scaleY(-1);
+            }
+
+            .daytime__options {
+                background-color: $color-white;
+                box-shadow: 0px 1px 40px 0px rgba(112,112,112,0.4);
+
+                transform: translateX(10px);
+                z-index: 10;
+                position: absolute;
+                bottom: -10rem;
+                right: 0;
+                padding: 2rem 2.5rem 2rem 1.5rem;
+            }
+
+            .tick {
+                margin-right: 10px;
+            }
+
+            .daytime__options-AM,
+            .daytime__options-PM {
+                cursor: pointer;
+            }
+
+            .daytime__options-AM {
+                margin-bottom: 15px;
+            }
+
+            .hidden {
+                opacity: 0;
+                z-index: -10;
+            }
+        }
+
+        .form__people {
+            display: flex;
+            margin-top: 4.2rem;
+            font-weight: 700;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba($color-gray-dark, 0.16);
+            text-align: center;
+            width: 100%;
+
+            .form__people-count {
+                flex: 0 0 60%;
+            }
+
+            .signs {
+                flex: 0 0 20%;
+                color: $color-brown;
+                cursor: pointer;
+                transition: transform .3s ease-in;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+
+                &:active {
+                    transform: scale(1.2);
+                }
+            }
+
+            .inactive {
+                color: rgba($color-brown, 0.1);
+            }
+        }
     }
 }

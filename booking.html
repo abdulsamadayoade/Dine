@@ -24,7 +24,63 @@
                     <p>We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
                 </div>
                 <div class="headerBooking__form">
+                    <form id="form" class="form">
+                        <div class="form__group">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <small>Error message</small>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <small>Error message</small>
+                        </div>
+                        <div class="form__group form__group-date">
+                            <label for="date">Pick a date</label>
+                            <div class="form__dateBox">
+                                <input type="number" name="month" id="month" min="1" max="12" placeholder="MM">
+                                <input type="number" name="day" id="day" min="1" max="31" placeholder="DD">
+                                <input type="number" name="year" id="year" min="2020" max="2030" placeholder="YYYY">
+                            </div>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form__group form__group-time">
+                            <label for="time">Pick a time</label>
+                            <div class="form__timeBox">
+                                <input type="number" name="hour" id="hour" min="00" max="12" placeholder="HH">
+                                <input type="number" name="minute" id="minute" min="00" max="59" placeholder="MM">
 
+                                <div class="daytime__box">
+                                    <span id="selectedDaytime">AM</span>
+                                    <span id="arrow" class="arrow">
+                                        <img src="images/icons/icon-arrow.svg" alt="Select arrow">
+                                    </span>
+
+                                    <div class="daytime__options hidden">
+                                        <div class="daytime__options-AM">
+                                        <span id="tickAM" class="tick">
+                                            <img src="images/icons/icon-check.svg" alt="Check icon">
+                                        </span>
+                                        AM
+                                        </div>
+
+                                        <div class="daytime__options-PM">
+                                            <span id="tickPM" class="tick -hidden">
+                                                <img src="images/icons/icon-check.svg" alt="Check icon">
+                                            </span>
+                                            PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <small>Error message</small>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__people">
+                                <span class="signs" id="minus">-</span>
+                                <span class="form__people-count"><span id="peopleNumber">4</span> <span id="peopleWord">people</span></span>
+                                <span class="signs" id="plus">+</span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
