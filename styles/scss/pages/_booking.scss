@@ -7,7 +7,12 @@
 
     
     @media only screen and (max-width: 1200px) {
+        background-image: url('../../../images/booking/hero-bg-tablet.jpg');
         margin-bottom: 43rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        background-image: url('../../../images/booking/hero-bg-mobile.jpg');
     }
 
     &__logo {

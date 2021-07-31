@@ -871,7 +871,14 @@ p {
 
 @media only screen and (max-width: 1200px) {
   .headerBooking {
+    background-image: url("../../../images/booking/hero-bg-tablet.jpg");
     margin-bottom: 43rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headerBooking {
+    background-image: url("../../../images/booking/hero-bg-mobile.jpg");
   }
 }
 
