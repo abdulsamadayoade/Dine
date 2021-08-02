@@ -4,7 +4,6 @@
     background-size: cover;
     padding-top: 7rem;
     margin-bottom: 32rem;
-
     
     @media only screen and (max-width: 1200px) {
         background-image: url('../../../images/booking/hero-bg-tablet.jpg');
@@ -63,16 +62,12 @@
         box-shadow: $blured-shadow;
         background-color: $color-white;
         position: relative;
-        padding: 2.7rem 10% 3.2rem 10%;
+        padding: 2.7rem 8% 3.2rem 8%;
 
         @media only screen and (max-width: 1200px) {
             max-width: 55rem;
             margin: 0 auto;
             padding: 3rem 5rem;
-        }
-
-        @media only screen and (max-width: 1200px) {
-            max-width: 100%;
         }
 
         &::after {
@@ -91,13 +86,15 @@
         }
 
         &__group {
+            width: 100%;
             position: relative;
             display: flex;
             align-items: center;
 
             label {
+                display: block;
                 flex: 0 0 25%;
-                margin-right: auto;
+                text-align: left;
             }
 
             small {
@@ -128,10 +125,7 @@
             }
 
             @media only screen and (max-width: 768px) {
-                display: block;
-
                 label {
-                    display: block;
                     margin-bottom: .5rem;
                 }
             }
@@ -159,54 +153,22 @@
             width: 100%;
         }
 
-        input[type=submit] {
-            background-color: $color-gray-dark;
-            border: 1px solid $color-gray-dark;
-            color: $color-white;
-            line-height: 8px;
-            font-size: 14px;
-            text-transform: uppercase;
-            padding: 31px 0;
-            width: 100%;
-            cursor: pointer;
-
-            &:link,
-            &:visited {
-                color: $color-white;
-            }
-
-            &:hover,
-            &:active {
-                background-color: $color-white;
-                color: $color-gray-dark;
-            }
-        }
-
-        label {
-            display: block;
-            text-align: left;
-        }
-
-        &__dateBox {
+        &__dateBox,
+        &__timeBox {
+            margin-left: 1.5rem;
+            flex: 0 0 75%;
             display: flex;
-            justify-content: space-between;
 
-            input:not(:last-child) {
-                flex: 0 0 27.76%;
+            @media only screen and (max-width: 500px) {
+                margin-left: .5rem;
             }
-            input:last-child {
-                flex: 0 0 33.46%;
+
+            input {
+                width: 100%;
             }
         }
 
         &__timeBox {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-
-            input {
-                flex: 0 0 27.76%;
-            }
 
             .daytime__box {
                 border-bottom: 1px solid rgba($color-gray-dark, 0.16);
@@ -302,5 +264,21 @@
                 line-height: 1.45;
             }
         }
+    }
+}
+
+// Remove up and down triangles on input elements
+@media only screen and (max-width: 768px) {
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    
+    input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
     }
 }
