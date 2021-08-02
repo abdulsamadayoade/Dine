@@ -993,6 +993,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .headerBooking .form {
+    padding: 3rem;
+  }
+}
+
 .headerBooking .form::after {
   content: url("../../../images/patterns/pattern-lines.svg");
   display: block;
@@ -1098,7 +1104,7 @@ p {
 
 .headerBooking .form__timeBox .daytime__box {
   border-bottom: 1px solid rgba(17, 17, 17, 0.16);
-  padding: 14px;
+  padding: 1rem;
   flex: 0 0 33.46%;
   height: 5.1rem;
   display: flex;
