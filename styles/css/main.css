@@ -1100,6 +1100,7 @@ p {
   border-bottom: 1px solid rgba(17, 17, 17, 0.16);
   padding: 14px;
   flex: 0 0 33.46%;
+  height: 5.1rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
