@@ -103,6 +103,46 @@ function timeCheck () {
     });
 }
 
+// FUNCTION TO CHECK IF ALL INPUTS ARE FILLED CORRECTLY AND TO DISPLAY THE MODAL
+function checkAll() {
+    const emailTemplate = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (
+        name.value && emailTemplate.test(String(email.value).toLowerCase())) {
+        if (dateValidation[0].element.value !== '' && dateValidation[1].element.value !== '' && dateValidation[2].element.value !== '') {
+            if (timeValidation[0].element.value !== '' && timeValidation[1].element.value !== '') {
+                const modal = document.getElementById('modal');
+                const closeBtn = document.getElementById('closeModalBtn');
+
+                modal.classList.add('open');
+                closeBtn.addEventListener('click', () => {
+                    modal.classList.remove('open');
+                    clearAll();
+                });
+            }
+        }
+    }
+}
+
+// FUNCTION TO CLEAR THE BOX AFTER ALL VALIDATIONS ARE RIGHT
+function clearAll() {
+    // get the inputs
+    const day = document.getElementById('day');
+    const month = document.getElementById('month');
+    const year = document.getElementById('year');
+    const hour = document.getElementById('hour');
+    const minute = document.getElementById('minute');
+
+    // clear all the inputs
+    name.value = '';
+    email.value = '';
+    day.value = '';
+    month.value = '';
+    year.value = '';
+    hour.value = '';
+    minute.value = '';
+}
+
 // ERROR FUNCTION
 function printError (inputElement, err, whatToDo) {
     // GET THE PARENT ELEMENT OF THE INPUT
@@ -134,5 +174,6 @@ form.addEventListener('submit', function(e){
     emailCheck();
     dateCheck();
     timeCheck();
+    checkAll();
     e.preventDefault();
 });

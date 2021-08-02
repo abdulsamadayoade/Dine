@@ -81,7 +81,7 @@
                             </div>
                         </div>
                         <div class="form__group">
-                            <button class="btn btn--black">
+                            <button class="btn btn--black" id="openModalBtn">
                                 <span>Make reservation</span>
                             </button>
                          </div>
@@ -90,6 +90,20 @@
             </div>
         </div>
     </header>
+
+    <!-- MODAL -->
+    <div class="modal-wrapper" id="modal">
+        <div class="modal">
+            <div class="modal-body">
+                <p>Your reservation request has been submitted. Thank You!</p>
+            </div>
+            <div class="modal-footer">
+                <button id="closeModalBtn" class="btn btn--black">
+                    <span>Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="footer white">
