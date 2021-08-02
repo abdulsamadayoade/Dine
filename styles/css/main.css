@@ -1108,7 +1108,7 @@ p {
   flex: 0 0 33.46%;
   height: 5.1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 
